@@ -1,0 +1,248 @@
+
+.auth-screen {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #fff;
+  color: #192a21;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 45px 32px;
+  margin: auto;
+}
+
+.auth-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-logo {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  background: #16794b;
+  border-radius: 13px;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.auth-brand strong, .auth-brand span { display: block; }
+.auth-brand strong { font-size: 17px; }
+.auth-brand span { color: #87938b; font-size: 11px; margin-top: 4px; }
+
+.auth-intro { margin: 60px 0 28px; }
+.auth-tag {
+  color: #168052;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.auth-intro h1 {
+  font-size: clamp(28px, 3vw, 36px);
+  letter-spacing: -1.4px;
+  margin: 14px 0 10px;
+}
+
+.auth-intro p {
+  color: #849087;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.auth-form { display: grid; gap: 19px; }
+.auth-form label {
+  display: grid;
+  gap: 8px;
+  color: #46584c;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.auth-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #e0e7e2;
+  border-radius: 9px;
+  background: #fff;
+  color: #192a21;
+  font-size: 13px;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #198052;
+  box-shadow: 0 0 0 3px #19805215;
+}
+
+.auth-submit {
+  margin-top: 5px;
+  border: 0;
+  border-radius: 9px;
+  padding: 15px;
+  background: #16794b;
+  color: white;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background .2s;
+}
+
+.auth-submit:hover { background: #105f3a; }
+.auth-submit:disabled { opacity: .65; cursor: wait; }
+
+.auth-error {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff0ef;
+  color: #b43d3d;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.auth-switch {
+  margin-top: 25px;
+  text-align: center;
+  color: #87938b;
+  font-size: 12px;
+}
+
+.auth-switch button {
+  border: 0;
+  background: none;
+  color: #16794b;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.auth-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 38px;
+  color: #9aa49e;
+  font-size: 10px;
+}
+
+.secure-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #32a66d;
+}
+
+.auth-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 65px clamp(30px, 6vw, 90px) 30px;
+  background: #123f2b;
+  color: white;
+}
+
+.side-decoration {
+  position: absolute;
+  border: 1px solid #ffffff12;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.decoration-one {
+  width: 570px;
+  height: 570px;
+  top: -200px;
+  right: -230px;
+}
+
+.decoration-two {
+  width: 430px;
+  height: 430px;
+  bottom: -170px;
+  left: -210px;
+}
+
+.side-content, .side-footer { position: relative; z-index: 1; }
+
+.side-pill {
+  display: inline-block;
+  padding: 9px 12px;
+  border: 1px solid #ffffff30;
+  border-radius: 30px;
+  color: #bce6c9;
+  font-size: 9px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.side-content h2 {
+  margin: 35px 0 18px;
+  font-size: clamp(35px, 4vw, 55px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.side-content h2 span { color: #8ce0ac; }
+
+.side-content > p {
+  max-width: 390px;
+  color: #c1d4c8;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.side-preview {
+  max-width: 390px;
+  margin-top: 45px;
+  padding: 22px;
+  border: 1px solid #ffffff25;
+  border-radius: 15px;
+  background: #ffffff0b;
+}
+
+.preview-heading, .preview-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #d7e6dc;
+  font-size: 10px;
+}
+
+.preview-live { color: #8ce0ac; font-size: 9px; }
+.preview-number { margin: 20px 0; font-size: 36px; font-weight: 700; }
+
+.preview-track {
+  height: 7px;
+  background: #ffffff20;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-track div {
+  width: 92.4%;
+  height: 100%;
+  border-radius: 8px;
+  background: #8ce0ac;
+}
+
+.preview-footer { margin-top: 16px; color: #b5cabe; }
+
+.side-footer { color: #b5cabe; font-size: 10px; }
+.side-footer span { padding: 0 5px; }
+
+@media (max-width: 850px) {
+  .auth-screen { grid-template-columns: 1fr; }
+  .auth-card { max-width: 480px; padding: 38px 25px; }
+  .auth-intro { margin-top: 45px; }
+  .auth-side { display: none; }
+}
